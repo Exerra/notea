@@ -13,8 +13,6 @@ import Link from 'next/link'
 import dayjs from 'dayjs'
 import PortalState from 'libs/web/state/portal'
 import useI18n from 'libs/web/hooks/use-i18n'
-import HeadwayWidget from '@headwayapp/react-widget'
-import useMounted from 'libs/web/hooks/use-mounted'
 import { useRouter } from 'next/router'
 
 const ButtonItem = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(
@@ -139,7 +137,6 @@ const ButtonSettings = () => {
 }
 
 const SidebarTool = () => {
-  const mounted = useMounted()
 
   return (
     <aside className="h-full flex flex-col w-12  md:w-11 flex-none bg-gray-200">
@@ -148,11 +145,6 @@ const SidebarTool = () => {
       <ButtonDailyNotes />
 
       <div className="tool mt-auto">
-        {mounted ? (
-          <HeadwayWidget account="J031Z7" badgePosition="center">
-            <div className="mx-3 w-5 h-5"></div>
-          </HeadwayWidget>
-        ) : null}
         <ButtonMenu></ButtonMenu>
         <ButtonSettings></ButtonSettings>
         <style jsx>{`
