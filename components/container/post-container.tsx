@@ -42,14 +42,7 @@ export const PostContainer: FC<{
             />
           ) : null}
           <footer className="pb-10 text-gray-300 text-center my-20 text-sm">
-            Built with{' '}
-            <a
-              href="https://cinwell.com/notea/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Notea
-            </a>
+            You reached the end, Hooray!
           </footer>
         </>
       )}
