@@ -27,13 +27,13 @@ class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="192x192"
-            href="/static/icons/icon-192x192.png"
+            href="/static/ios/192.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="128x128"
-            href="/static/icons/icon-128x128.png"
+            href="/static/ios/128.png"
           />
           <link rel="manifest" href="/static/manifest.json" />
         </Head>
